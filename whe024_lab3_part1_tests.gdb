@@ -1,0 +1,171 @@
+test “PINA: 0x00 & PINB: 0x00 => PORTC: 0x00”
+setPINA 0x00
+setPINB 0x00
+continue 5
+expectPORTC 0x00
+checkResult
+
+test “PINA: 0x01 & PINB: 0x01 => PORTC: 0x02”
+setPINA 0x01
+setPINB 0x01
+continue 5
+expectPORTC 0x02
+checkResult
+
+test “PINA: 0x02 & PINB: 0x02 => PORTC: 0x02”
+setPINA 0x02
+setPINB 0x02
+continue 5
+expectPORTC 0x02
+checkResult
+
+test “PINA: 0x03 & PINB: 0x03 => PORTC: 0x04”
+setPINA 0x03
+setPINB 0x03
+continue 5
+expectPORTC 0x04
+checkResult
+
+test “PINA: 0x04 & PINB: 0x04 => PORTC: 0x02”
+setPINA 0x04
+setPINB 0x04
+continue 5
+expectPORTC 0x02
+checkResult
+
+test “PINA: 0x05 & PINB: 0x05 => PORTC: 0x04”
+setPINA 0x05
+setPINB 0x05
+continue 5
+expectPORTC 0x04
+checkResult
+
+test “PINA: 0x06 & PINB: 0x06 => PORTC: 0x04”
+setPINA 0x06
+setPINB 0x06
+continue 5
+expectPORTC 0x04
+checkResult
+
+test “PINA: 0x07 & PINB: 0x07 => PORTC: 0x06”
+setPINA 0x07
+setPINB 0x07
+continue 5
+expectPORTC 0x06
+checkResult
+
+test “PINA: 0x08 & PINB: 0x08 => PORTC: 0x02”
+setPINA 0x08
+setPINB 0x08
+continue 5
+expectPORTC 0x02
+checkResult
+
+test “PINA: 0x09 & PINB: 0x09 => PORTC: 0x04”
+setPINA 0x09
+setPINB 0x09
+continue 5
+expectPORTC 0x04
+checkResult
+
+test “PINA: 0x0A & PINB: 0x0A => PORTC: 0x04”
+setPINA 0x0A
+setPINB 0x0A
+continue 5
+expectPORTC 0x04
+checkResult
+
+test “PINA: 0x0B & PINB: 0x0B => PORTC: 0x06”
+setPINA 0x0B
+setPINB 0x0B
+continue 5
+expectPORTC 0x06
+checkResult
+
+test “PINA: 0x0C & PINB: 0x0C => PORTC: 0x04”
+setPINA 0x0C
+setPINB 0x0C
+continue 5
+expectPORTC 0x04
+checkResult
+
+test “PINA: 0x0D & PINB: 0x0D => PORTC: 0x06”
+setPINA 0x0D
+setPINB 0x0D
+continue 5
+expectPORTC 0x06
+checkResult
+
+test “PINA: 0x0E & PINB: 0x0E => PORTC: 0x06”
+setPINA 0x0E
+setPINB 0x0E
+continue 5
+expectPORTC 0x06
+checkResult
+
+test “PINA: 0x0F & PINB: 0x0F => PORTC: 0x08”
+setPINA 0x0F
+setPINB 0x0F
+continue 5
+expectPORTC 0x08
+checkResult
+
+test “PINA: 0x11 & PINB: 0x11 => PORTC: 0x04”
+setPINA 0x11
+setPINB 0x11
+continue 5
+expectPORTC 0x04
+
+checkResulttest “PINA: 0x66 & PINB: 0x66 => PORTC: 0x08”
+setPINA 0x66
+setPINB 0x66
+continue 5
+expectPORTC 0x08
+
+checkResulttest “PINA: 0x77 & PINB: 0x77 => PORTC: 0x0C”
+setPINA 0x00
+setPINB 0x00
+continue 5
+expectPORTC 0x00
+
+checkResulttest “PINA: 0xFF & PINB: 0xFF => PORTC: 0x10”
+setPINA 0xFF
+setPINB 0xFF
+continue 5
+expectPORTC 0x10
+checkResult
+
+test “PINA: 0x0B & PINB: 0x06 => PORTC: 0x05”
+setPINA 0x0B
+setPINB 0x06
+continue 5
+expectPORTC 0x05
+checkResult
+
+test “PINA: 0xCC & PINB: 0x07 => PORTC: 0x0A”
+setPINA 0xCC
+setPINB 0x07
+continue 5
+expectPORTC 0x0A
+checkResult
+
+test “PINA: 0xEE & PINB: 0x77 => PORTC: 0x0C”
+setPINA 0xEE
+setPINB 0x77
+continue 5
+expectPORTC 0x0C
+checkResult
+
+test “PINA: 0x49 & PINB: 0xDA => PORTC: 0x08”
+setPINA 0x49
+setPINB 0xDA
+continue 5
+expectPORTC 0x08
+checkResult
+
+test “PINA: 0x2B & PINB: 0xF3 => PORTC: 0x0A”
+setPINA 0x2B
+setPINB 0xF3
+continue 5
+expectPORTC 0x0A
+checkResult
